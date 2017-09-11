@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <view.SquareGLSurfaceView
+        android:id="@+id/squareglview"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+
+    <com.kiwi.ui.widget.KwControlView
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/squareglview"
+        android:id="@+id/kiwi_control_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipChildren="false">
+        <view.FocusIndicator
+            android:id="@+id/focus_indicator"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+    </FrameLayout>
+    <Button
+        android:id="@+id/startrecord"
+        android:text="开始录制"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_alignParentRight="true"
+        android:id="@+id/stoprecord"
+        android:text="停止录制"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/savemovie"
+        android:text="保存录制"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_below="@id/savemovie"
+        android:id="@+id/xianshi"
+        android:text="显示"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
